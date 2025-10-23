@@ -13,9 +13,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-qfv4cfq(kx#!b@c9o0wm#u6++dh^pd*1o(v!o@8)pvofm_2(v7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False  
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "www.goefte.com",      # your custom domain
+    "goefte.com",          # non-www version (optional but recommended)
+    "goefte.onrender.com", # your Render app domain
+    "127.0.0.1",           # local testing
+    "localhost"             # local testing
+]
 
 
 # Application definition
