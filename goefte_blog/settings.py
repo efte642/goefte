@@ -15,7 +15,13 @@ SECRET_KEY = 'django-insecure-qfv4cfq(kx#!b@c9o0wm#u6++dh^pd*1o(v!o@8)pvofm_2(v7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'my-first-blog.onrender.com',  # Your live Render URL
+    '127.0.0.1',                   # For local testing
+    'localhost',                    # For local testing
+    'www.goefte.com',               # Your custom domain
+    'goefte.com'                    # Optional: for accessing without www
+]
 
 
 # Application definition
@@ -45,6 +51,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'goefte_blog.urls'
@@ -114,6 +122,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']  # all apps share this root static folder
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'           # uploaded images / files stored here
