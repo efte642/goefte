@@ -1,0 +1,21 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Database files
+*.sqlite3
+
+# Django static files
+/staticfiles/
+media/
+
+# Environment variables
+.env
+
+# VS Code files (optional)
+.vscode/
+
+# MacOS files (optional)
+.DS_Store
