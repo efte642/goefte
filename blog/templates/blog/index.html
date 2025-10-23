@@ -1,0 +1,206 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="content-container">
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        {% if hero_posts %}
+            <div class="main-hero">
+                {% with hero_posts.0 as post %}
+                    <div class="featured-article" role="article">
+                        {% if post.image %}
+                            <div class="hero-image-wrapper">
+                                <img src="{{ post.image.url }}" alt="{{ post.title }}" class="hero-image">
+                            </div>
+                        {% endif %}
+                        <div class="featured-content">
+                            <a href="{% url 'blog:post_detail' post.slug %}" class="featured-link">
+                                <span class="article-category">{{ post.category.name }}</span>
+                                <h1>{{ post.title }}</h1>
+                            </a>
+                        </div>
+                    </div>
+                {% endwith %}
+            </div>
+
+            <aside class="side-articles" role="complementary">
+                {% for post in hero_posts|slice:"1:" %}
+                    <article>
+                        <a href="{% url 'blog:post_detail' post.slug %}">
+                            {% if post.image %}
+                                <div class="side-image-wrapper">
+                                    <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                                </div>
+                            {% endif %}
+                            <div class="post-content-wrapper side-content">
+                                <span class="article-category">{{ post.category.name }}</span>
+                                <h3>{{ post.title }}</h3>
+                            </div>
+                        </a>
+                    </article>
+                {% empty %}
+                    <p>No additional hero posts.</p>
+                {% endfor %}
+            </aside>
+        {% else %}
+            <p>No hero post available at the moment.</p>
+        {% endif %}
+    </section>
+
+    <!-- Categories Section -->
+    <section class="category-section" aria-labelledby="explore-categories-title">
+        <div class="section-title">
+            <h3 id="explore-categories-title">Explore Categories</h3>
+        </div>
+        <div class="category-grid">
+            {% for category in categories %}
+                <a href="{% url 'blog:category_posts' category.slug %}" class="category-item">
+                    <figure>
+                        {% if category.image %}
+                            <img src="{{ category.image.url }}" alt="{{ category.name }}">
+                        {% endif %}
+                        <figcaption>
+                            <h4>{{ category.name }}</h4>
+                        </figcaption>
+                    </figure>
+                </a>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Featured Posts Section -->
+    <section class="featured-posts-section" aria-labelledby="featured-posts-title">
+        <div class="section-title">
+            <h3 id="featured-posts-title">Featured Posts</h3>
+        </div>
+        <div class="featured-posts-grid">
+            {% for post in featured_posts %}
+                <div class="featured-post-item">
+                    {% if post.image %}
+                        <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                    {% endif %}
+                    <a href="{% url 'blog:post_detail' post.slug %}" class="featured-post-link">
+                        <h4>{{ post.title }}</h4>
+                    </a>
+                </div>
+            {% empty %}
+                <p>No featured posts available.</p>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Popular Posts Section -->
+    <section class="popular-posts-section" aria-labelledby="popular-posts-title">
+        <div class="section-title">
+            <h3 id="popular-posts-title">Popular Posts</h3>
+        </div>
+        <div class="popular-posts-grid">
+            {% for post in popular_posts %}
+                <article class="popular-post-card" role="article">
+                    <figure class="post-card-figure">
+                        <div class="post-card-image">
+                            {% if post.image %}
+                                <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                            {% endif %}
+                        </div>
+                        <figcaption class="post-card-content">
+                            <span class="article-category">{{ post.category.name }}</span>
+                           <a href="{% url 'blog:post_detail' post.slug %}"> <h4>{{ post.title }}</h4></a>
+                        </figcaption>
+                    </figure>
+                </article>
+            {% empty %}
+                <p>No popular posts yet.</p>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section class="recent-posts-section" aria-labelledby="recent-posts-title">
+        <div class="section-title">
+            <h3 id="recent-posts-title">Recent Posts</h3>
+        </div>
+        <div class="recent-posts-container">
+            <div class="blog-posts-container">
+                {% for post in recent_posts %}
+                    <article class="blog-post-card" role="article">
+                        <a href="{% url 'blog:post_detail' post.slug %}">
+                            <figure>
+                                {% if post.image %}
+                                    <div class="blog-post-image">
+                                        <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                                    </div>
+                                {% endif %}
+                                <figcaption class="blog-post-content">
+                                    <span class="article-category">{{ post.category.name }}</span>
+                                    <h4>{{ post.title }}</h4>
+                                    <p>{{ post.summary|default:"" }}</p>
+                                    <span class="read-more-link">Read More <i class="fas fa-arrow-right"></i></span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                {% empty %}
+                    <p>No recent posts yet.</p>
+                {% endfor %}
+
+                <div class="load-more-container">
+                    <button class="load-more-btn" aria-label="Load more posts">LOAD MORE</button>
+                </div>
+            </div>
+
+            <!-- Ads Sidebar -->
+            <aside class="ad-aside" role="complementary" aria-label="Advertisements">
+                <div class="ad-item">
+                    <a href="#"><img src="{% static 'images/04.jpg' %}" alt="Advertisement 1"></a>
+                </div>
+                <div class="ad-item">
+                    <a href="#"><img src="{% static 'images/pexels-valeriiamiller-3798146.jpg' %}" alt="Advertisement 2"></a>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Community Highlights Section -->
+    <section class="community-highlights-section" aria-labelledby="community-highlights-title">
+        <div class="section-title">
+            <h3 id="community-highlights-title">Community Highlights</h3>
+        </div>
+        <div class="community-highlights-grid">
+            {% for post in community_posts %}
+                <a href="{% url 'blog:post_detail' post.slug %}" class="community-card">
+                    {% if post.image %}
+                        <div class="community-card-image">
+                            <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                        </div>
+                    {% endif %}
+                    <div class="community-card-content">
+                        <h4>{{ post.title }}</h4>
+                        <p>{{ post.summary|default:"" }}</p>
+                        <div class="community-card-meta">
+                            <i class="fas fa-comment"></i>
+                            <span>{{ post.comment_count|default:"0" }} Comments</span>
+                        </div>
+                    </div>
+                </a>
+            {% empty %}
+                <p>No community highlights yet.</p>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="subscribe-section" aria-labelledby="subscribe-title">
+        <h2 id="subscribe-title">Stay Informed</h2>
+        <p>Get the latest news and updates delivered to your inbox.</p>
+        <form action="#" method="post">
+            <label for="email-input" class="sr-only">Enter your email address</label>
+            <input type="email" id="email-input" name="email" placeholder="Enter your email address" required>
+            <button type="submit">SUBSCRIBE</button>
+        </form>
+    </section>
+
+</div>
+{% endblock %}

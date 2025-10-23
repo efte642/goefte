@@ -1,0 +1,30 @@
+    <header role="banner">
+        <div class="logo">
+            <a href="{% url 'blog:home' %}" aria-label="Goefte Magazine Home">Goefte</a>
+        </div>
+        <nav class="main-nav" role="navigation">
+            <ul class="nav-links" id="main-nav-menu">
+                 <li><a href="{% url 'blog:category_posts' 'travel' %}">Travel</a></li>
+                <li><a href="{% url 'blog:category_posts' 'health' %}">Health</a></li>
+                <li><a href="{% url 'blog:category_posts' 'lifestyle' %}">Lifestyle</a></li>
+                <li><a href="{% url 'blog:category_posts' 'sports' %}">Sports</a></li>
+                 <li><a href="{% url 'blog:category_posts' 'wealth' %}">Wealth</a></li>
+                <li><a href="{% url 'blog:category_posts' 'technology' %}">Tenhonology</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Search here..." aria-label="Search posts">
+            <button aria-label="Search">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-toggle" aria-expanded="false" aria-controls="main-nav-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>

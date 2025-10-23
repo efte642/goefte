@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Dynamic Title -->
+    <title>{% block title %}{{ meta_title|default:"Goefte Magazine – Lifestyle, Travel, Tech & Culture for USA and Canada" }}{% endblock %}</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{{ meta_description|default:"Goefte Magazine delivers trending stories on lifestyle, travel, tech, wellness, and culture for readers in the USA and Canada." }}">
+    <meta name="keywords" content="{{ meta_keywords|default:"Goefte, USA magazine, Canada magazine, online magazine, lifestyle trends, tech news, travel blog, wellness tips" }}">
+    <meta name="author" content="Goefte Magazine" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="{{ request.build_absolute_uri }}" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ meta_title|default:"Goefte Magazine – Lifestyle, Travel, Tech & Culture for USA and Canada" }}" />
+    <meta property="og:description" content="{{ meta_description|default:"Goefte brings you inspiring lifestyle stories, tech trends, and travel experiences from North America and beyond." }}" />
+    <meta property="og:url" content="{{ request.build_absolute_uri }}" />
+    {% if meta_image %}
+    <meta property="og:image" content="{{ meta_image.url }}" />
+    {% else %}
+    <meta property="og:image" content="{% static 'images/default-og-image.jpg' %}" />
+    {% endif %}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ meta_title|default:"Goefte Magazine" }}" />
+    <meta name="twitter:description" content="{{ meta_description|default:"Your digital magazine for lifestyle, tech, and travel inspiration in the USA and Canada." }}" />
+    {% if meta_image %}
+    <meta name="twitter:image" content="{{ meta_image.url }}" />
+    {% else %}
+    <meta name="twitter:image" content="{% static 'images/default-og-image.jpg' %}" />
+    {% endif %}
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{% static 'svg/favicon.svg' %}" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- Google AdSense Placeholder -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX"
+        crossorigin="anonymous"></script>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Goefte Magazine",
+        "url": "{{ request.build_absolute_uri }}",
+        "description": "{{ meta_description|default:"A digital lifestyle and culture magazine focused on USA and Canada." }}",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Goefte Media",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{% static 'images/logo.png' %}"
+            }
+        }
+    }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    {% include 'header.html' %}
+
+    <main role="main">
+        {% block content %}
+        
+        {% endblock %}
+    </main>
+
+    {% include 'footer.html' %}
+
+    <script src="{% static 'js/script.js' %}" defer></script>
+</body>
+</html>
