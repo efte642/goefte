@@ -15,13 +15,7 @@ SECRET_KEY = 'django-insecure-qfv4cfq(kx#!b@c9o0wm#u6++dh^pd*1o(v!o@8)pvofm_2(v7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'my-first-blog.onrender.com',  # Your live Render URL
-    '127.0.0.1',                   # For local testing
-    'localhost',                    # For local testing
-    'www.goefte.com',               # Your custom domain
-    'goefte.com'                    # Optional: for accessing without www
-]
+ALLOWED_HOSTS = ["goefte.onrender.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
