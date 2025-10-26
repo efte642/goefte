@@ -1,0 +1,2134 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-10-18T13:25:09.612Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Food",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-10-18T13:37:13.342Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Sports",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-10-18T13:37:36.669Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Food",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-10-18T13:38:33.318Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Travel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-10-18T13:40:23.689Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Lifestyle",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-10-18T13:41:45.847Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Outdoor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-10-18T13:43:53.364Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "Technology",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-10-18T13:44:30.660Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Food",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-10-18T13:44:43.211Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "Food & Drink",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-10-18T13:49:26.787Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Outdoor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-10-18T13:54:41.935Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "The Rise of AI in Everyday Life",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-10-18T13:55:52.797Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "The Rise of AI in Everyday Life",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Published\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-10-18T14:10:15.450Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Hidden Gems: Exploring the Lesser-Known Trails of North America",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-10-18T14:11:59.560Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Minimalism in Modern North American Homes",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-10-18T14:16:26.119Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Mental Health Awareness in the Workpl",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-10-18T14:32:25.473Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Preventative health strategies what experts say about proactive wellness",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-10-18T14:36:42.652Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "hhhhhhhhhhhhh",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-10-18T14:39:22.043Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Preventative health strategies what experts say about proactive wellness",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Published\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-10-18T15:03:47.700Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "This will fix the hero section not showing issue and prevent template errors.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-10-18T15:39:08.905Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "hhhhhhhhhhhhh",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-10-18T15:40:53.798Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Top 7 Must-Try Comfort Foods Across North America",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-10-18T15:51:10.393Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "Top 5 Emerging Tech Trends to Watch in 2025",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-10-18T15:52:25.021Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "10",
+    "object_repr": "Top 10 Scenic Road Trips in the USA and Canada",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-10-18T15:53:52.437Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "11",
+    "object_repr": "Top 5 Trending Sports in North America in 2025",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-10-18T15:55:46.398Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "12",
+    "object_repr": "Top 7 Outdoor Adventures to Try in the USA & Canada",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-10-18T15:56:52.712Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "7 Lifestyle Trends Shaping North America in 2025",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-10-18T15:58:55.843Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "14",
+    "object_repr": "Top 7 Fitness Trends in the USA & Canada for 2025",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-10-18T16:00:15.275Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "15",
+    "object_repr": "Top 5 Streaming Shows and Movies in North America 2025",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-10-18T16:01:29.381Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "16",
+    "object_repr": "Top 7 Home & Garden Trends in the USA & Canada for 2025",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-10-19T05:14:39.148Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "Health",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Slug\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-10-19T05:18:39.793Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Wealth",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Slug\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-10-19T05:20:34.940Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Travel",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-10-19T05:20:45.032Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "Travel & Outdoor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-10-19T05:21:33.826Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "Travel",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-10-19T06:42:15.871Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "17",
+    "object_repr": "Top 10 Weekend Getaways in the USA for 2025",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-10-19T06:43:18.917Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "17",
+    "object_repr": "Top 10 Weekend Getaways in the USA for 2025",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-10-19T06:44:01.316Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "17",
+    "object_repr": "Top 10 Weekend Getaways in the USA for 2025",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-10-19T06:44:24.362Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "17",
+    "object_repr": "Top 10 Weekend Getaways in the USA for 2025",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-10-19T06:56:59.475Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "17",
+    "object_repr": "Top 10 Weekend Getaways in the USA for 2025",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-10-19T07:02:35.510Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "18",
+    "object_repr": "Essential Travel Gear for Canadian Adventures",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-10-20T03:27:54.855Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "19",
+    "object_repr": "Sustainable Travel: How to Explore Responsibly in 2025",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-10-20T03:28:57.779Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "Travel",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-10-21T06:55:08.715Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "20",
+    "object_repr": "The 2025 Ultimate Home Office: 10 Productivity Hacks & Gadgets to Stop Procrastinating",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2025-10-21T07:16:05.551Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Preventative health strategies what experts say about proactive wellness",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\", \"Tags\", \"Meta title\", \"Meta description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2025-10-21T07:18:28.355Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "This will fix the hero section not showing issue and prevent template errors.",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2025-10-21T07:27:33.803Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "21",
+    "object_repr": "The Power of Sports: Building Health, Discipline & Team Spirit",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2025-10-21T07:29:47.324Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "21",
+    "object_repr": "The Power of Sports: Building Health, Discipline & Team Spirit",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\", \"Section\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2025-10-22T10:33:46.494Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "22",
+    "object_repr": "Tailgates, Touchdowns & Tim Hortons: Football Culture Across the Border",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2025-10-22T10:49:05.730Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "23",
+    "object_repr": "Soccer’s North American Boom: MLS, CPL & The New Fan Experience",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2025-10-22T10:49:37.204Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "23",
+    "object_repr": "Soccer’s North American Boom: MLS, CPL & The New Fan Experience",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Section\", \"Published\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2025-10-22T10:53:18.668Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "23",
+    "object_repr": "Soccer’s North American Boom: MLS, CPL & The New Fan Experience",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2025-10-22T11:04:05.243Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "24",
+    "object_repr": "Top Family-Friendly Sports Getaways in the USA & Canada",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2025-10-22T11:05:02.069Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "24",
+    "object_repr": "Top Family-Friendly Sports Getaways in the USA & Canada",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2025-10-22T11:10:32.120Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Top 7 Must-Try Comfort Foods Across North America",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2025-10-22T11:18:05.967Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "25",
+    "object_repr": "Top 7 Must-Try Comfort Foods Across North America",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2025-10-23T08:41:42.097Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "Top 5 Emerging Tech Trends to Watch in 2025",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2025-10-23T08:45:36.719Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "26",
+    "object_repr": "Proactive Health: Expert Strategies for Preventative Wellness in 2025",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2025-10-23T08:46:02.286Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "26",
+    "object_repr": "Proactive Health: Expert Strategies for Preventative Wellness in 2025",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Published\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2025-10-23T08:51:29.241Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "26",
+    "object_repr": "Proactive Health: Expert Strategies for Preventative Wellness in 2025",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2025-10-23T09:09:12.215Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "27",
+    "object_repr": "Elevating Everyday Life: Top Lifestyle Trends and Habits for 2025",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2025-10-23T09:13:07.304Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "27",
+    "object_repr": "Elevating Everyday Life: Top Lifestyle Trends and Habits for 2025",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2025-10-23T09:14:04.813Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "28",
+    "object_repr": "Lifestyle Trends to Elevate Your Life in 2025",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2025-10-23T09:14:29.928Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "28",
+    "object_repr": "Lifestyle Trends to Elevate Your Life in 2025",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Section\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2025-10-23T09:14:48.186Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "28",
+    "object_repr": "Lifestyle Trends to Elevate Your Life in 2025",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Published\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2025-10-23T09:26:26.929Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "29",
+    "object_repr": "Sustainable Travel: How to Explore Responsibly",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2025-10-23T09:26:41.052Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "29",
+    "object_repr": "Sustainable Travel: How to Explore Responsibly",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Published\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2025-10-23T09:37:25.453Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Minimalism in Modern North American Homes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Content\", \"Tags\", \"Meta description\"]}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$jUA63mQGxTNaMDSoAVTarp$wDzeHLBQq/hBd0BD1jxaKvkPwxxcDWxIK3g9uHiYHjg=",
+    "last_login": "2025-10-18T13:24:49.984Z",
+    "is_superuser": true,
+    "username": "Goefte_Admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-10-18T13:20:27.425Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3xsc099x9b2cwlb71dsz32svj2e4ncgc",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBGBkSX7nsGMgyDVA1NSrsy3l2bdKHb_977LxVpXWpcu8xxzOqiQB1-t0T8kLaBfKd2mzRPbZnHpDdF77TrYcryvO7u30GlXr91cBaTeFOO1gQnJ-8yWkiEwFS8PzP5QAELGgFvBaEYBgJHnINDAfX-AM4KN5I:1vA6vR:zNOydSAWteDH4Kct4vwRJH9UGJaXzWt0dx6CNUySnTg",
+    "expire_date": "2025-11-01T13:24:49.991Z"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "Technology",
+    "slug": "technology"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "Travel",
+    "slug": "travel"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "Lifestyle",
+    "slug": "lifestyle"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "dance",
+    "slug": "dance"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "Cultural",
+    "slug": "cultural"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 6,
+  "fields": {
+    "name": "gggg",
+    "slug": "gggg"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 7,
+  "fields": {
+    "name": "California winery",
+    "slug": "california-winery"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 8,
+  "fields": {
+    "name": "Napa Valley vineyard",
+    "slug": "napa-valley-vineyard"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 9,
+  "fields": {
+    "name": "carry on luggage",
+    "slug": "carry-on-luggage"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 10,
+  "fields": {
+    "name": "travel backpack",
+    "slug": "travel-backpack"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 11,
+  "fields": {
+    "name": "best ergonomic home office gear",
+    "slug": "best-ergonomic-home-office-gear"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 12,
+  "fields": {
+    "name": "home office setup ideas 2025",
+    "slug": "home-office-setup-ideas-2025"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 13,
+  "fields": {
+    "name": "remote work hacks",
+    "slug": "remote-work-hacks"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 14,
+  "fields": {
+    "name": "work from home productivity tools",
+    "slug": "work-from-home-productivity-tools"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 15,
+  "fields": {
+    "name": "healthy lifestyle mindset",
+    "slug": "healthy-lifestyle-mindset"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 16,
+  "fields": {
+    "name": "long-term health habits",
+    "slug": "long-term-health-habits"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 17,
+  "fields": {
+    "name": "proactive wellness tips",
+    "slug": "proactive-wellness-tips"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 18,
+  "fields": {
+    "name": "benefits of sports",
+    "slug": "benefits-of-sports"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 19,
+  "fields": {
+    "name": "importance of physical activity",
+    "slug": "importance-of-physical-activity"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 20,
+  "fields": {
+    "name": "sports and mental health",
+    "slug": "sports-and-mental-health"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 21,
+  "fields": {
+    "name": "teamwork and discipline in sports",
+    "slug": "teamwork-and-discipline-in-sports"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 22,
+  "fields": {
+    "name": "CFL traditions",
+    "slug": "cfl-traditions"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 23,
+  "fields": {
+    "name": "NFL tailgate",
+    "slug": "nfl-tailgate"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 24,
+  "fields": {
+    "name": "football fandom USA Canada",
+    "slug": "football-fandom-usa-canada"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 25,
+  "fields": {
+    "name": "game day rituals",
+    "slug": "game-day-rituals"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 26,
+  "fields": {
+    "name": "CPL Canada",
+    "slug": "cpl-canada"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 27,
+  "fields": {
+    "name": "MLS expansion",
+    "slug": "mls-expansion"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 28,
+  "fields": {
+    "name": "soccer fan culture",
+    "slug": "soccer-fan-culture"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 29,
+  "fields": {
+    "name": "soccer growth North America",
+    "slug": "soccer-growth-north-america"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 30,
+  "fields": {
+    "name": "youth soccer development",
+    "slug": "youth-soccer-development"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 31,
+  "fields": {
+    "name": "USA Canada sports getaways",
+    "slug": "usa-canada-sports-getaways"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 32,
+  "fields": {
+    "name": "family sports vacations",
+    "slug": "family-sports-vacations"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 33,
+  "fields": {
+    "name": "kid-friendly sports trips",
+    "slug": "kid-friendly-sports-trips"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 34,
+  "fields": {
+    "name": "outdoor family adventures",
+    "slug": "outdoor-family-adventures"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 35,
+  "fields": {
+    "name": "sports tourism",
+    "slug": "sports-tourism"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 36,
+  "fields": {
+    "name": "North American cuisine",
+    "slug": "north-american-cuisine"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 37,
+  "fields": {
+    "name": "balanced diet",
+    "slug": "balanced-diet"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 38,
+  "fields": {
+    "name": "healthy comfort foods",
+    "slug": "healthy-comfort-foods"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 39,
+  "fields": {
+    "name": "nutritious comfort foods",
+    "slug": "nutritious-comfort-foods"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 40,
+  "fields": {
+    "name": "wellness food guide",
+    "slug": "wellness-food-guide"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 41,
+  "fields": {
+    "name": "2025 Health Trends",
+    "slug": "2025-health-trends"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 42,
+  "fields": {
+    "name": "Fitness",
+    "slug": "fitness"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 43,
+  "fields": {
+    "name": "Health",
+    "slug": "health"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 44,
+  "fields": {
+    "name": "Healthy Lifestyle",
+    "slug": "healthy-lifestyle"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 45,
+  "fields": {
+    "name": "Mental Health",
+    "slug": "mental-health"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 46,
+  "fields": {
+    "name": "Nutrition",
+    "slug": "nutrition"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 47,
+  "fields": {
+    "name": "Preventative Wellness",
+    "slug": "preventative-wellness"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 48,
+  "fields": {
+    "name": "2025 Lifestyle Trends",
+    "slug": "2025-lifestyle-trends"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 49,
+  "fields": {
+    "name": "Home Decor",
+    "slug": "home-decor"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 50,
+  "fields": {
+    "name": "Mindfulness",
+    "slug": "mindfulness"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 51,
+  "fields": {
+    "name": "Personal Growth",
+    "slug": "personal-growth"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 52,
+  "fields": {
+    "name": "Productivity",
+    "slug": "productivity"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 53,
+  "fields": {
+    "name": "Sustainable Living",
+    "slug": "sustainable-living"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 54,
+  "fields": {
+    "name": "Wellness",
+    "slug": "wellness"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 55,
+  "fields": {
+    "name": "climate-friendly travel",
+    "slug": "climate-friendly-travel"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 56,
+  "fields": {
+    "name": "eco tourism",
+    "slug": "eco-tourism"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 57,
+  "fields": {
+    "name": "ethical tourism",
+    "slug": "ethical-tourism"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 58,
+  "fields": {
+    "name": "green travel tips",
+    "slug": "green-travel-tips"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 59,
+  "fields": {
+    "name": "responsible travel",
+    "slug": "responsible-travel"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 60,
+  "fields": {
+    "name": "slow travel",
+    "slug": "slow-travel"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 61,
+  "fields": {
+    "name": "sustainable travel",
+    "slug": "sustainable-travel"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 62,
+  "fields": {
+    "name": "North America lifestyle",
+    "slug": "north-america-lifestyle"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 63,
+  "fields": {
+    "name": "decluttering",
+    "slug": "decluttering"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 64,
+  "fields": {
+    "name": "home design",
+    "slug": "home-design"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 65,
+  "fields": {
+    "name": "interior design trends",
+    "slug": "interior-design-trends"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 66,
+  "fields": {
+    "name": "mindful living",
+    "slug": "mindful-living"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 67,
+  "fields": {
+    "name": "minimalism",
+    "slug": "minimalism"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 68,
+  "fields": {
+    "name": "modern homes",
+    "slug": "modern-homes"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 69,
+  "fields": {
+    "name": "sustainable living",
+    "slug": "sustainable-living_1"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 1,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 5,
+    "content_type": 10,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 6,
+  "fields": {
+    "tag": 3,
+    "content_type": 10,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 7,
+    "content_type": 10,
+    "object_id": 17
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 9,
+  "fields": {
+    "tag": 8,
+    "content_type": 10,
+    "object_id": 17
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 10,
+  "fields": {
+    "tag": 9,
+    "content_type": 10,
+    "object_id": 18
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 11,
+  "fields": {
+    "tag": 10,
+    "content_type": 10,
+    "object_id": 18
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 12,
+  "fields": {
+    "tag": 11,
+    "content_type": 10,
+    "object_id": 20
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 13,
+  "fields": {
+    "tag": 12,
+    "content_type": 10,
+    "object_id": 20
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 14,
+  "fields": {
+    "tag": 13,
+    "content_type": 10,
+    "object_id": 20
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 15,
+  "fields": {
+    "tag": 14,
+    "content_type": 10,
+    "object_id": 20
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 16,
+  "fields": {
+    "tag": 15,
+    "content_type": 10,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 17,
+  "fields": {
+    "tag": 16,
+    "content_type": 10,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 18,
+  "fields": {
+    "tag": 17,
+    "content_type": 10,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 19,
+  "fields": {
+    "tag": 18,
+    "content_type": 10,
+    "object_id": 21
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 20,
+  "fields": {
+    "tag": 19,
+    "content_type": 10,
+    "object_id": 21
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 21,
+  "fields": {
+    "tag": 20,
+    "content_type": 10,
+    "object_id": 21
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 22,
+  "fields": {
+    "tag": 21,
+    "content_type": 10,
+    "object_id": 21
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 23,
+  "fields": {
+    "tag": 22,
+    "content_type": 10,
+    "object_id": 22
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 24,
+  "fields": {
+    "tag": 23,
+    "content_type": 10,
+    "object_id": 22
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 25,
+  "fields": {
+    "tag": 24,
+    "content_type": 10,
+    "object_id": 22
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 26,
+  "fields": {
+    "tag": 25,
+    "content_type": 10,
+    "object_id": 22
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 27,
+  "fields": {
+    "tag": 26,
+    "content_type": 10,
+    "object_id": 23
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 28,
+  "fields": {
+    "tag": 27,
+    "content_type": 10,
+    "object_id": 23
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 29,
+  "fields": {
+    "tag": 28,
+    "content_type": 10,
+    "object_id": 23
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 30,
+  "fields": {
+    "tag": 29,
+    "content_type": 10,
+    "object_id": 23
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 31,
+  "fields": {
+    "tag": 30,
+    "content_type": 10,
+    "object_id": 23
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 32,
+  "fields": {
+    "tag": 31,
+    "content_type": 10,
+    "object_id": 24
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 33,
+  "fields": {
+    "tag": 32,
+    "content_type": 10,
+    "object_id": 24
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 34,
+  "fields": {
+    "tag": 33,
+    "content_type": 10,
+    "object_id": 24
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 35,
+  "fields": {
+    "tag": 34,
+    "content_type": 10,
+    "object_id": 24
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 36,
+  "fields": {
+    "tag": 35,
+    "content_type": 10,
+    "object_id": 24
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 37,
+  "fields": {
+    "tag": 36,
+    "content_type": 10,
+    "object_id": 25
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 38,
+  "fields": {
+    "tag": 37,
+    "content_type": 10,
+    "object_id": 25
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 39,
+  "fields": {
+    "tag": 38,
+    "content_type": 10,
+    "object_id": 25
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 40,
+  "fields": {
+    "tag": 39,
+    "content_type": 10,
+    "object_id": 25
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 41,
+  "fields": {
+    "tag": 40,
+    "content_type": 10,
+    "object_id": 25
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 42,
+  "fields": {
+    "tag": 41,
+    "content_type": 10,
+    "object_id": 26
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 43,
+  "fields": {
+    "tag": 42,
+    "content_type": 10,
+    "object_id": 26
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 44,
+  "fields": {
+    "tag": 43,
+    "content_type": 10,
+    "object_id": 26
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 45,
+  "fields": {
+    "tag": 44,
+    "content_type": 10,
+    "object_id": 26
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 46,
+  "fields": {
+    "tag": 45,
+    "content_type": 10,
+    "object_id": 26
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 47,
+  "fields": {
+    "tag": 46,
+    "content_type": 10,
+    "object_id": 26
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 48,
+  "fields": {
+    "tag": 47,
+    "content_type": 10,
+    "object_id": 26
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 57,
+  "fields": {
+    "tag": 48,
+    "content_type": 10,
+    "object_id": 28
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 58,
+  "fields": {
+    "tag": 49,
+    "content_type": 10,
+    "object_id": 28
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 59,
+  "fields": {
+    "tag": 3,
+    "content_type": 10,
+    "object_id": 28
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 60,
+  "fields": {
+    "tag": 50,
+    "content_type": 10,
+    "object_id": 28
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 61,
+  "fields": {
+    "tag": 51,
+    "content_type": 10,
+    "object_id": 28
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 62,
+  "fields": {
+    "tag": 52,
+    "content_type": 10,
+    "object_id": 28
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 63,
+  "fields": {
+    "tag": 53,
+    "content_type": 10,
+    "object_id": 28
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 64,
+  "fields": {
+    "tag": 54,
+    "content_type": 10,
+    "object_id": 28
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 65,
+  "fields": {
+    "tag": 55,
+    "content_type": 10,
+    "object_id": 29
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 66,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 29
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 67,
+  "fields": {
+    "tag": 57,
+    "content_type": 10,
+    "object_id": 29
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 68,
+  "fields": {
+    "tag": 58,
+    "content_type": 10,
+    "object_id": 29
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 69,
+  "fields": {
+    "tag": 59,
+    "content_type": 10,
+    "object_id": 29
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 70,
+  "fields": {
+    "tag": 60,
+    "content_type": 10,
+    "object_id": 29
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 71,
+  "fields": {
+    "tag": 61,
+    "content_type": 10,
+    "object_id": 29
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 72,
+  "fields": {
+    "tag": 62,
+    "content_type": 10,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 73,
+  "fields": {
+    "tag": 63,
+    "content_type": 10,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 74,
+  "fields": {
+    "tag": 64,
+    "content_type": 10,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 75,
+  "fields": {
+    "tag": 65,
+    "content_type": 10,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 76,
+  "fields": {
+    "tag": 66,
+    "content_type": 10,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 77,
+  "fields": {
+    "tag": 67,
+    "content_type": 10,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 78,
+  "fields": {
+    "tag": 68,
+    "content_type": 10,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 79,
+  "fields": {
+    "tag": 69,
+    "content_type": 10,
+    "object_id": 3
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 2,
+  "fields": {
+    "name": "Sports",
+    "slug": "sports",
+    "image": "categories/sports.jpg"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 4,
+  "fields": {
+    "name": "Lifestyle",
+    "slug": "lifestyle",
+    "image": "categories/lifestyle.jpg"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 5,
+  "fields": {
+    "name": "Wealth",
+    "slug": "wealth",
+    "image": "categories/Wealth_or_Finance.jpg"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 6,
+  "fields": {
+    "name": "Technology",
+    "slug": "technology",
+    "image": "categories/Technology.jpg"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 7,
+  "fields": {
+    "name": "Health",
+    "slug": "health",
+    "image": "categories/Health_or_Wellness.jpg"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 8,
+  "fields": {
+    "name": "Travel",
+    "slug": "travel-outdoor",
+    "image": "categories/below_1jpg.jpg"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "The Rise of AI in Everyday Life",
+    "slug": "the-rise-of-ai-in-everyday-life",
+    "category": 6,
+    "image": "posts/Technology-1.jpg",
+    "content": "<p><strong>Content:</strong></p>\r\n\r\n<p>Artificial Intelligence (AI) has moved from the realm of science fiction into the heart of everyday life. Once limited to research labs and tech giants, AI now powers a growing array of tools that influence how we work, communicate, and make decisions. In North America, particularly the USA and Canada, AI adoption is transforming industries and redefining human-machine interaction.</p>\r\n\r\n<h3><strong>AI in Our Daily Lives</strong></h3>\r\n\r\n<p>Most people interact with AI without realizing it. Virtual assistants like Siri, Alexa, and Google Assistant use natural language processing to respond to queries, manage schedules, and control smart home devices. Streaming platforms, e-commerce sites, and social media leverage AI algorithms to offer personalized recommendations, from which movies to watch to products to buy. Even navigation apps, health trackers, and online banking use AI for predictive analytics, fraud detection, and customer support.</p>\r\n\r\n<h3><strong>Impact on Businesses</strong></h3>\r\n\r\n<p>Companies across sectors are increasingly relying on AI to streamline operations. Retailers use AI to manage inventory and optimize logistics, while healthcare providers apply AI for diagnostics and treatment recommendations. In the finance sector, AI models analyze market trends and automate trading decisions. These innovations help organizations reduce costs, increase efficiency, and deliver more personalized experiences to customers.</p>\r\n\r\n<h3><strong>Ethical Considerations</strong></h3>\r\n\r\n<p>While AI offers immense potential, it raises ethical and social concerns. Privacy, data security, and algorithmic bias remain critical issues. North American regulators and tech companies are navigating these challenges through stricter data policies and responsible AI frameworks. Educating users and fostering transparency in AI applications is essential to building trust and long-term adoption.</p>\r\n\r\n<h3><strong>The Future of AI</strong></h3>\r\n\r\n<p>AI&rsquo;s influence is set to grow further with advancements in machine learning, robotics, and natural language processing. Smart cities, autonomous vehicles, and predictive healthcare are no longer distant visions but emerging realities. By embracing AI thoughtfully, societies in the USA and Canada can harness technology for economic growth, social well-being, and a more connected future.</p>",
+    "section": "hero",
+    "published": true,
+    "views": 0,
+    "meta_title": "The Rise of AI in Everyday Life",
+    "meta_description": "The Rise of AI in Everyday Life",
+    "created_at": "2025-10-18T13:54:41.922Z",
+    "updated_at": "2025-10-18T13:55:52.794Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "Minimalism in Modern North American Homes",
+    "slug": "minimalism-in-modern-north-american-homes",
+    "category": 4,
+    "image": "posts/A_bright_open-concept_living_room_with_neutral_tones_and_minimalist_furniture..jpg",
+    "content": 

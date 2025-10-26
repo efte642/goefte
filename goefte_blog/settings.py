@@ -13,15 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-qfv4cfq(kx#!b@c9o0wm#u6++dh^pd*1o(v!o@8)pvofm_2(v7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False  
+DEBUG = False
 
-ALLOWED_HOSTS = [
-    "www.goefte.com",      # your custom domain
-    "goefte.com",          # non-www version (optional but recommended)
-    "goefte.onrender.com", # your Render app domain
-    "127.0.0.1",           # local testing
-    "localhost"             # local testing
-]
+ALLOWED_HOSTS = ['goefte.onrender.com', 'goefte.com', 'www.goefte.com']
 
 
 # Application definition
@@ -45,14 +39,13 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # add this line
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'goefte_blog.urls'
@@ -121,12 +114,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']  # all apps share this root static folder
+STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'           # uploaded images / files stored here
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # CKEditor upload path
 CKEDITOR_UPLOAD_PATH = "uploads/"

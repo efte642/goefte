@@ -52,7 +52,7 @@ class PostDetailView(DetailView):
         context['related_posts'] = Post.objects.filter(
             category=post.category,
             published=True
-        ).exclude(id=post.id).order_by('-created_at')[:5]
+        ).exclude(id=post.id).order_by('-created_at')[:3]
 
         # All categories (for sidebar/menu)
         context['categories'] = Category.objects.all()
