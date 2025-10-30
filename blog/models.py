@@ -16,6 +16,11 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.name)
+        super().save(*args, **kwargs)
+
 
 class Post(models.Model):
     SECTION_CHOICES = (
@@ -32,14 +37,12 @@ class Post(models.Model):
     image = models.ImageField(upload_to='posts/', blank=True, null=True)
     content = RichTextField()
     tags = TaggableManager(blank=True)
-
     section = models.CharField(
         max_length=20,
         choices=SECTION_CHOICES,
         default='regular',
         help_text="Select which section this post will appear in (e.g., Hero, Featured, Popular, etc.)"
     )
-
     published = models.BooleanField(default=False)
     views = models.PositiveIntegerField(default=0, help_text="Auto-updated count of post views")
 

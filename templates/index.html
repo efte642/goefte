@@ -5,33 +5,35 @@
 <div class="content-container">
 
     <!-- Featured Section -->
-    <section class="featured-section">
+    <section class="featured-section" aria-labelledby="hero-section-title">
+        <h2 id="hero-section-title" class="sr-only">Hero Posts</h2>
+
         {% if hero_posts %}
             <div class="main-hero">
                 {% with hero_posts.0 as post %}
-                    <div class="featured-article" role="article">
+                    <article class="featured-article" role="article">
                         {% if post.image %}
                             <div class="hero-image-wrapper">
-                                <img src="{{ post.image.url }}" alt="{{ post.title }}" class="hero-image">
+                                <img src="{{ post.image.url }}" alt="{{ post.title|default:'Hero post image' }}" class="hero-image">
                             </div>
                         {% endif %}
                         <div class="featured-content">
-                            <a href="{% url 'blog:post_detail' post.slug %}" class="featured-link">
+                            <a href="{% url 'blog:post_detail' post.slug %}" class="featured-link" title="{{ post.title }}">
                                 <span class="article-category">{{ post.category.name }}</span>
                                 <h1>{{ post.title }}</h1>
                             </a>
                         </div>
-                    </div>
+                    </article>
                 {% endwith %}
             </div>
 
             <aside class="side-articles" role="complementary">
                 {% for post in hero_posts|slice:"1:" %}
                     <article>
-                        <a href="{% url 'blog:post_detail' post.slug %}">
+                        <a href="{% url 'blog:post_detail' post.slug %}" title="{{ post.title }}">
                             {% if post.image %}
                                 <div class="side-image-wrapper">
-                                    <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                                    <img src="{{ post.image.url }}" alt="{{ post.title|default:'Side hero image' }}">
                                 </div>
                             {% endif %}
                             <div class="post-content-wrapper side-content">
@@ -51,12 +53,13 @@
 
     <!-- Categories Section -->
     <section class="category-section" aria-labelledby="explore-categories-title">
+        <h2 id="explore-categories-title" class="sr-only">Explore Categories</h2>
         <div class="section-title">
-            <h3 id="explore-categories-title">Explore Categories</h3>
+            <h3>Explore Categories</h3>
         </div>
         <div class="category-grid">
             {% for category in categories %}
-                <a href="{% url 'blog:category_posts' category.slug %}" class="category-item">
+                <a href="{% url 'blog:category_posts' category.slug %}" class="category-item" title="View posts in {{ category.name }}">
                     <figure>
                         {% if category.image %}
                             <img src="{{ category.image.url }}" alt="{{ category.name }}">
@@ -72,19 +75,20 @@
 
     <!-- Featured Posts Section -->
     <section class="featured-posts-section" aria-labelledby="featured-posts-title">
+        <h2 id="featured-posts-title" class="sr-only">Featured Posts</h2>
         <div class="section-title">
-            <h3 id="featured-posts-title">Featured Posts</h3>
+            <h3>Featured Posts</h3>
         </div>
         <div class="featured-posts-grid">
             {% for post in featured_posts %}
-                <div class="featured-post-item">
+                <article class="featured-post-item">
                     {% if post.image %}
                         <img src="{{ post.image.url }}" alt="{{ post.title }}">
                     {% endif %}
-                    <a href="{% url 'blog:post_detail' post.slug %}" class="featured-post-link">
+                    <a href="{% url 'blog:post_detail' post.slug %}" class="featured-post-link" title="{{ post.title }}">
                         <h4>{{ post.title }}</h4>
                     </a>
-                </div>
+                </article>
             {% empty %}
                 <p>No featured posts available.</p>
             {% endfor %}
@@ -93,8 +97,9 @@
 
     <!-- Popular Posts Section -->
     <section class="popular-posts-section" aria-labelledby="popular-posts-title">
+        <h2 id="popular-posts-title" class="sr-only">Popular Posts</h2>
         <div class="section-title">
-            <h3 id="popular-posts-title">Popular Posts</h3>
+            <h3>Popular Posts</h3>
         </div>
         <div class="popular-posts-grid">
             {% for post in popular_posts %}
@@ -107,7 +112,9 @@
                         </div>
                         <figcaption class="post-card-content">
                             <span class="article-category">{{ post.category.name }}</span>
-                           <a href="{% url 'blog:post_detail' post.slug %}"> <h4>{{ post.title }}</h4></a>
+                            <a href="{% url 'blog:post_detail' post.slug %}" title="{{ post.title }}">
+                                <h4>{{ post.title }}</h4>
+                            </a>
                         </figcaption>
                     </figure>
                 </article>
@@ -119,14 +126,15 @@
 
     <!-- Recent Posts Section -->
     <section class="recent-posts-section" aria-labelledby="recent-posts-title">
+        <h2 id="recent-posts-title" class="sr-only">Recent Posts</h2>
         <div class="section-title">
-            <h3 id="recent-posts-title">Recent Posts</h3>
+            <h3>Recent Posts</h3>
         </div>
         <div class="recent-posts-container">
             <div class="blog-posts-container">
                 {% for post in recent_posts %}
                     <article class="blog-post-card" role="article">
-                        <a href="{% url 'blog:post_detail' post.slug %}">
+                        <a href="{% url 'blog:post_detail' post.slug %}" title="{{ post.title }}">
                             <figure>
                                 {% if post.image %}
                                     <div class="blog-post-image">
@@ -165,12 +173,13 @@
 
     <!-- Community Highlights Section -->
     <section class="community-highlights-section" aria-labelledby="community-highlights-title">
+        <h2 id="community-highlights-title" class="sr-only">Community Highlights</h2>
         <div class="section-title">
-            <h3 id="community-highlights-title">Community Highlights</h3>
+            <h3>Community Highlights</h3>
         </div>
         <div class="community-highlights-grid">
             {% for post in community_posts %}
-                <a href="{% url 'blog:post_detail' post.slug %}" class="community-card">
+                <a href="{% url 'blog:post_detail' post.slug %}" class="community-card" title="{{ post.title }}">
                     {% if post.image %}
                         <div class="community-card-image">
                             <img src="{{ post.image.url }}" alt="{{ post.title }}">
@@ -196,6 +205,7 @@
         <h2 id="subscribe-title">Stay Informed</h2>
         <p>Get the latest news and updates delivered to your inbox.</p>
         <form action="#" method="post">
+            {% csrf_token %}
             <label for="email-input" class="sr-only">Enter your email address</label>
             <input type="email" id="email-input" name="email" placeholder="Enter your email address" required>
             <button type="submit">SUBSCRIBE</button>

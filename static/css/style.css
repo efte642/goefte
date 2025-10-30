@@ -36,6 +36,7 @@
         a {
             background-color: transparent;
             text-decoration: none;
+            color: inherit;
         }
 
         abbr[title] {
@@ -241,7 +242,7 @@
             font-size: clamp(1rem, 2.5vw, 1.1rem);
         }
 
-        .blog-post-content h4 {
+        .blog-post-content h4 {     
             font-size: clamp(1.2rem, 3vw, 1.4rem);
         }
 
@@ -802,7 +803,7 @@
         .popular-post-card:hover .post-card-image img {
             transform: scale(1.05);
         }
-
+       
         .post-card-content {
             background-color: var(--white);
             padding: 1rem 0;
@@ -818,6 +819,7 @@
             margin: 0;
             line-height: 1.4;
             margin-top: .5rem;
+            color: var(--black);
         }
 
         .popular-post-card:hover h4 {
@@ -1576,7 +1578,7 @@
 
 
 
-        /* Post Detail page css */
+/* Post Detail page css */
 
 
         /* Heading clamp() values */
@@ -2177,3 +2179,46 @@ main section:first-of-type {
 
 /* --- Global Layout/Container Styles --- */
 
+
+/* =========================================================
+   Tag Page CSS (Based on Category Page Layout)
+   ========================================================= */
+
+.tag-header-title {
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.tag-header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    z-index: 1;
+}
+
+.tag-header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Post card hover enhancement */
+.category-post-item:hover {
+    background-color: var(--lt-gray);
+    transition: background-color 0.3s ease;
+}

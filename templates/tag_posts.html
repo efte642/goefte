@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Tag Header Section -->
+<section class="category-header">
+    {% if tag %}
+        <img src="{% static 'images/default-tag.jpg' %}" alt="{{ tag.name }}" class="category-header-image">
+        <h1 class="category-header-title">#{{ tag.name }}</h1>
+    {% endif %}
+</section>
+
+<div class="content-container">
+    <div class="category-main-content">
+
+        <!-- Tag Posts List -->
+        <div class="category-posts-list">
+            {% if tag_posts %}
+                {% for post in tag_posts %}
+                    <article class="category-post-item">
+                        <a href="{% url 'blog:post_detail' slug=post.slug %}">
+                            <div class="category-post-image">
+                                {% if post.image %}
+                                    <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                                {% else %}
+                                    <img src="{% static 'images/default-post.jpg' %}" alt="{{ post.title }}">
+                                {% endif %}
+                            </div>
+                            <div class="category-post-content">
+                                <h3 class="post-title">{{ post.title }}</h3>
+                                <div class="post-meta">
+                                    {% if post.created_at %}
+                                        <time datetime="{{ post.created_at|date:'Y-m-d' }}">{{ post.created_at|date:'F d, Y' }}</time>
+                                    {% endif %}
+                                    {% if post.category %}
+                                        <span class="article-category">{{ post.category.name }}</span>
+                                    {% endif %}
+                                </div>
+                                <p class="post-excerpt">{{ post.summary|truncatewords:30 }}</p>
+                                <span class="read-more-link">Read More <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </article>
+                {% endfor %}
+            {% else %}
+                <p>No posts found for this tag.</p>
+            {% endif %}
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="category-sidebar">
+
+            <!-- Advertisement -->
+            <div class="sidebar-widget advertisement-widget">
+                <h3 class="sidebar-widget-title">Advertisement</h3>
+                <a href="#">
+                    <img src="https://placehold.co/300x400/eeeeee/cccccc?text=Ad+Space" alt="Advertisement" class="ad-image">
+                </a>
+            </div>
+
+            <!-- Related Tags -->
+            <div class="sidebar-widget">
+                <h3 class="sidebar-widget-title">Related Tags</h3>
+                <div class="other-categories-list">
+                    {% for related_tag in related_tags %}
+                        <a href="{% url 'blog:tag_detail' related_tag.slug %}" class="category-item">
+                            <div class="category-item-image">
+                                <img src="{% static 'images/default-tag.jpg' %}" alt="{{ related_tag.name }}">
+                            </div>
+                            <h4 class="category-item-name">#{{ related_tag.name }}</h4>
+                        </a>
+                    {% empty %}
+                        <p>No related tags available.</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </aside>
+
+    </div>
+</div>
+
+<!-- Subscribe Section -->
+<section class="subscribe-section" aria-labelledby="subscribe-title">
+    <h2 id="subscribe-title">Stay Informed</h2>
+    <p>Get the latest posts tagged "{{ tag.name }}" delivered to your inbox.</p>
+    <form action="#" method="post">
+        {% csrf_token %}
+        <label for="email-input" class="sr-only">Enter your email address</label>
+        <input type="email" id="email-input" name="email" placeholder="Enter your email address" required>
+        <button type="submit">SUBSCRIBE</button>
+    </form>
+</section>
+
+{% endblock %}
